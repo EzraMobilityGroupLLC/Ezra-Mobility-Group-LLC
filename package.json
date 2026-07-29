@@ -10,7 +10,6 @@
     "deploy": "astro build && wrangler pages deploy dist --project-name ezramobilitygroup"
   },
   "dependencies": {
-    "@rollup/rollup-win32-x64-msvc": "^4.62.3",
     "astro": "^5.2.0",
     "resend": "^6.16.0"
   },
