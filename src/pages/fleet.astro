@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import siteData from "../config/siteData.json";
+const fleetData = siteData.fleet[0];
+---
+
+<BaseLayout title="Target Fleet" description="Ezra Mobility Group's target luxury SUV fleet for Austin premium rideshare. Black-on-black, signature pink bumper guards.">
+  <Header />
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-label animate-in">Target Fleet</div>
+        <h1 class="section-title animate-in animate-in-delay-1">{fleetData.category}</h1>
+        <p class="section-subtitle animate-in animate-in-delay-2">{fleetData.description}</p>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="fleet__header">
+          <span class="fleet__tag">{fleetData.tag}</span>
+        </div>
+        <div class="fleet__grid">
+          {fleetData.vehicles.map((v, i) => (
+            <div class="fleet__card animate-in" style={`animation-delay: ${0.1 + i * 0.05}s`}>
+              <div class="fleet__card-header">
+                <div class="fleet__card-icon">🚙</div>
+                <h3 class="fleet__card-name">{v.name}</h3>
+              </div>
+              <ul class="fleet__card-features">
+                {v.features.map((f) => (
+                  <li class="fleet__card-feature">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ff69b4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section text-center">
+      <div class="container container-narrow">
+        <h2 class="section-title">Want to See This Fleet on the Road?</h2>
+        <p class="section-subtitle" style="margin:0 auto var(--gap-lg);">We're raising capital and recruiting owner-operators to bring these 6 identical SUVs to Austin streets. Partner with us.</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Get Involved</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .fleet__header { margin-bottom: var(--gap-xl); }
+  .fleet__tag { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--color-primary); background: rgba(255,105,180,0.08); border: 1px solid rgba(255,105,180,0.2); padding: 0.4rem 1rem; border-radius: 100px; }
+  .fleet__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap-md); }
+  .fleet__card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); transition: var(--transition); }
+  .fleet__card:hover { border-color: var(--border-color-hover); transform: translateY(-2px); }
+  .fleet__card-header { display: flex; align-items: center; gap: var(--gap-sm); margin-bottom: var(--gap-md); }
+  .fleet__card-icon { font-size: 1.5rem; }
+  .fleet__card-name { font-size: 0.95rem; }
+  .fleet__card-features { list-style: none; display: flex; flex-direction: column; gap: var(--gap-sm); }
+  .fleet__card-feature { font-size: 0.85rem; color: var(--text-secondary); display: flex; gap: 0.4rem; line-height: 1.4; }
+  @media (max-width: 768px) {
+    .fleet__grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .fleet__grid { grid-template-columns: 1fr; }
+  }
+</style>

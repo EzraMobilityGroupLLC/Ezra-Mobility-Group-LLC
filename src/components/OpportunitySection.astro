@@ -1,0 +1,59 @@
+---
+const reasons = [
+  {
+    icon: "📈",
+    title: "Premium Rideshare is Growing 40% YoY in Austin",
+    desc: "Austin's premium segment (Uber Black, Black SUV, Lyft Black XL) is growing faster than the standard rideshare market. More corporate travelers, event attendees, and affluent residents means consistent demand at 2-3x standard rates."
+  },
+  {
+    icon: "🏎️",
+    title: "Major Events Create Predictable Revenue Spikes",
+    desc: "F1 US Grand Prix ($1.2B economic impact), SXSW ($400M+), ACL Music Festival, UT football — these aren't just events, they're 10x demand multipliers for premium rides. Black SUVs command surge pricing across the board."
+  },
+  {
+    icon: "🎯",
+    title: "Brand Recognition = Repeat Bookings",
+    desc: "Our signature gloss-pink front bumper guards make every fleet vehicle instantly identifiable. At airport pickups and event venues, passengers choose the recognizable fleet. First ride becomes a repeat customer."
+  },
+  {
+    icon: "🤝",
+    title: "Multiple Paths to Participate",
+    desc: "Invest, supply a vehicle, or drive. We've structured flexible partnership models so you can participate at whatever level suits your goals. No need to build a fleet yourself — join ours."
+  }
+];
+---
+<section class="section opportunity" id="opportunity">
+  <div class="container">
+    <div class="grid-2 opportunity__grid">
+      <div>
+        <div class="section-label animate-in">The Opportunity</div>
+        <h2 class="section-title animate-in animate-in-delay-1">Why Premium Rideshare in Austin?</h2>
+        <p class="section-subtitle animate-in animate-in-delay-2">
+          The premium rideshare segment in Austin is undersupplied and growing fast. Here's why now is the right time to build.
+        </p>
+        <a href="/invest" class="btn btn-primary btn-lg animate-in animate-in-delay-3">See Full Investment Case</a>
+      </div>
+      <div class="opportunity__cards">
+        {reasons.map((r, i) => (
+          <div class="opportunity__card animate-in" style={`animation-delay: ${0.2 + i * 0.1}s`}>
+            <span class="opportunity__card-icon">{r.icon}</span>
+            <div>
+              <h3 class="opportunity__card-title">{r.title}</h3>
+              <p class="opportunity__card-desc">{r.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .opportunity__grid { align-items: center; }
+  .opportunity__cards { display: flex; flex-direction: column; gap: var(--gap-md); }
+  .opportunity__card { display: flex; gap: var(--gap-md); background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); transition: var(--transition); }
+  .opportunity__card:hover { border-color: var(--border-color-hover); }
+  .opportunity__card-icon { font-size: 1.5rem; line-height: 1.4; flex-shrink: 0; }
+  .opportunity__card-title { font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .opportunity__card-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+</style>

@@ -1,0 +1,59 @@
+---
+import siteData from "../config/siteData.json";
+---
+
+<form class="contact-form" id="contactForm" action="https://formsubmit.co/9aba2c1b8b4841d113e4bbf8f7fe71ab" method="POST">
+  <input type="hidden" name="_subject" value="New Partnership Inquiry — ezramobilitygroup.com">
+  <input type="hidden" name="_template" value="table">
+  <input type="text" name="_honey" style="display:none">
+  <div class="contact-form__grid">
+    <div class="contact-form__field contact-form__field-full">
+      <label for="name" class="contact-form__label">Name</label>
+      <input type="text" id="name" name="name" required class="contact-form__input" placeholder="Your full name">
+    </div>
+    <div class="contact-form__field">
+      <label for="email" class="contact-form__label">Email</label>
+      <input type="email" id="email" name="email" required class="contact-form__input" placeholder="you@example.com">
+    </div>
+    <div class="contact-form__field">
+      <label for="phone" class="contact-form__label">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone" class="contact-form__input" placeholder="(512) 555-1234">
+    </div>
+    <div class="contact-form__field contact-form__field-full">
+      <label for="interest" class="contact-form__label">I'm Interested In</label>
+      <select id="interest" name="interest" required class="contact-form__input">
+        <option value="" disabled selected>Select your interest</option>
+        <option value="investor">Investing in the Fleet (Passive Investor)</option>
+        <option value="owner-operator">Owner-Operator (Own & Drive a Vehicle)</option>
+        <option value="driver">Driver (Drive a Company Vehicle)</option>
+        <option value="dealer">Dealership / Vehicle Supplier</option>
+        <option value="other">Other Partnership</option>
+      </select>
+    </div>
+    <div class="contact-form__field contact-form__field-full">
+      <label for="message" class="contact-form__label">How can we collaborate?</label>
+      <textarea id="message" name="message" rows="5" required class="contact-form__input contact-form__textarea" placeholder="Tell us about your interest in partnering and your background..."></textarea>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg contact-form__submit">Send Partnership Inquiry</button>
+  <p class="contact-form__footnote">We'll respond within 24 hours. All inquiries treated confidentially.</p>
+</form>
+
+<style is:global>
+  .contact-form { width: 100%; }
+  .contact-form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-md); }
+  .contact-form__field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .contact-form__field-full { grid-column: 1 / -1; }
+  .contact-form__label { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+  .contact-form__input { padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; transition: var(--transition); }
+  .contact-form__input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-glow); }
+  .contact-form__input::placeholder { color: var(--text-muted); }
+  .contact-form__input select { cursor: pointer; }
+  .contact-form__input option { background: var(--bg-card); color: var(--text-primary); }
+  .contact-form__textarea { resize: vertical; min-height: 120px; }
+  .contact-form__submit { margin-top: var(--gap-lg); }
+  .contact-form__footnote { font-size: 0.8rem; color: var(--text-muted); margin-top: var(--gap-md); }
+  @media (max-width: 640px) {
+    .contact-form__grid { grid-template-columns: 1fr; }
+  }
+</style>

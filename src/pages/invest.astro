@@ -1,0 +1,260 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import siteData from "../config/siteData.json";
+---
+
+<BaseLayout title="Invest — Ezra Mobility Group" description="Invest in Ezra Mobility Group's premium Austin SUV fleet. See the opportunity, financial projections, and partnership structures.">
+  <Header />
+  <main>
+    <!-- Hero -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="section-label animate-in">Investment Opportunity</div>
+        <h1 class="section-title animate-in animate-in-delay-1">Own a Piece of Austin's Premium Rideshare Market</h1>
+        <p class="section-subtitle animate-in animate-in-delay-2" style="max-width:680px;">
+          Ezra Mobility Group LLC is raising capital and recruiting partners to launch a fleet of 6 identical black-on-black luxury SUVs targeting Uber Black and Lyft Black XL — the highest per-mile payout tiers in rideshare.
+        </p>
+        <div class="invest__actions animate-in animate-in-delay-3">
+          <a href="/contact" class="btn btn-primary btn-lg">Inquire About Investing</a>
+          <a href="#projections" class="btn btn-secondary btn-lg">Skip to Financials</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / Solution -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <div class="section-label animate-in">The Gap</div>
+            <h2 class="section-title animate-in animate-in-delay-1">Austin Has a Premium Rideshare Supply Problem</h2>
+            <p class="section-subtitle animate-in animate-in-delay-2">During SXSW, ACL, F1, and UT game days, Uber Black and Lyft Black XL demand exceeds supply by 3-5x. Riders wait 30+ minutes. Standard UberX riders get automatically upgraded to Black. The market needs more premium vehicles — and it needs them branded so riders can find them instantly at airport and venue pickups.</p>
+          </div>
+          <div class="invest__gap-cards animate-in animate-in-delay-2">
+            <div class="invest__gap-card">
+              <span class="invest__gap-num">3-5x</span>
+              <span class="invest__gap-lbl">Demand vs Supply During Events</span>
+            </div>
+            <div class="invest__gap-card">
+              <span class="invest__gap-num">40%</span>
+              <span class="invest__gap-lbl">YoY Premium Segment Growth</span>
+            </div>
+            <div class="invest__gap-card">
+              <span class="invest__gap-num">$2.50-3.50</span>
+              <span class="invest__gap-lbl">Per Mile — Uber Black SUV Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Models -->
+    <section class="section">
+      <div class="container container-narrow text-center">
+        <div class="section-label animate-in">How to Partner</div>
+        <h2 class="section-title animate-in animate-in-delay-1">Choose Your Role</h2>
+        <div class="invest__models">
+          <div class="invest__model animate-in animate-in-delay-1">
+            <span class="invest__model-icon">💰</span>
+            <h3>Passive Investor</h3>
+            <p>Invest $5K–$50K. Revenue share or equity. No operational involvement. Quarterly reporting.</p>
+          </div>
+          <div class="invest__model animate-in animate-in-delay-2">
+            <span class="invest__model-icon">🚙</span>
+            <h3>Owner-Operator</h3>
+            <p>Supply your qualifying luxury SUV. We handle branding, Uber/Lyft setup, and fleet pricing. 80/20 split in your favor.</p>
+          </div>
+          <div class="invest__model animate-in animate-in-delay-3">
+            <span class="invest__model-icon">👨‍✈️</span>
+            <h3>Fleet Driver</h3>
+            <p>Drive a company vehicle with all costs covered. 70/30 split. No vehicle required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- P&L Projections -->
+    <section class="section section-dark" id="projections">
+      <div class="container container-narrow">
+        <div class="text-center">
+          <div class="section-label animate-in">Financial Projections</div>
+          <h2 class="section-title animate-in animate-in-delay-1">Projected Per-Vehicle P&L</h2>
+          <p class="section-subtitle animate-in animate-in-delay-2" style="margin:0 auto var(--gap-xl);">Estimated figures for one (1) luxury SUV operating full-time in the Austin metro across Uber Black, Black SUV, and Lyft Black XL tiers. Conservative estimates.</p>
+        </div>
+        <div class="pnl animate-in animate-in-delay-2">
+          <table class="pnl__table">
+            <thead>
+              <tr>
+                <th>Line Item</th>
+                <th class="pnl__num">Monthly</th>
+                <th class="pnl__num">Annual</th>
+                <th class="pnl__num">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="pnl__section-header">
+                <td colspan="4">Revenue (Gross Fares)</td>
+              </tr>
+              <tr>
+                <td>Uber Black / Black SUV / Lyft Black XL fares</td>
+                <td class="pnl__num">$4,500</td>
+                <td class="pnl__num">$54,000</td>
+                <td class="pnl__muted">~150 hrs/month active, avg $30/hr</td>
+              </tr>
+              <tr>
+                <td>Event surge premium (SXSW, F1, ACL, UT)</td>
+                <td class="pnl__num">$1,500</td>
+                <td class="pnl__num">$18,000</td>
+                <td class="pnl__muted">~12 event days/year, 2-3x rates</td>
+              </tr>
+              <tr class="pnl__total">
+                <td><strong>Total Gross Revenue</strong></td>
+                <td class="pnl__num"><strong>$6,000</strong></td>
+                <td class="pnl__num"><strong>$72,000</strong></td>
+                <td class="pnl__muted"></td>
+              </tr>
+              <tr class="pnl__section-header">
+                <td colspan="4">Driver Commission (70% of Gross)</td>
+              </tr>
+              <tr>
+                <td>Driver payout (company vehicle model)</td>
+                <td class="pnl__num">-$4,200</td>
+                <td class="pnl__num">-$50,400</td>
+                <td class="pnl__muted">Or 80% for owner-operator model</td>
+              </tr>
+              <tr class="pnl__section-header">
+                <td colspan="4">Operating Expenses</td>
+              </tr>
+              <tr>
+                <td>Vehicle payment/lease</td>
+                <td class="pnl__num">-$900</td>
+                <td class="pnl__num">-$10,800</td>
+                <td class="pnl__muted">~$50K vehicle, 60-month</td>
+              </tr>
+              <tr>
+                <td>Insurance (commercial)</td>
+                <td class="pnl__num">-$350</td>
+                <td class="pnl__num">-$4,200</td>
+                <td class="pnl__muted">Commercial rideshare policy</td>
+              </tr>
+              <tr>
+                <td>Fuel / charging</td>
+                <td class="pnl__num">-$400</td>
+                <td class="pnl__num">-$4,800</td>
+                <td class="pnl__muted">~$0.10/mile blended</td>
+              </tr>
+              <tr>
+                <td>Maintenance & detailing</td>
+                <td class="pnl__num">-$300</td>
+                <td class="pnl__num">-$3,600</td>
+                <td class="pnl__muted">$0.05/mile + weekly detail</td>
+              </tr>
+              <tr>
+                <td>Registration, tolls, misc</td>
+                <td class="pnl__num">-$200</td>
+                <td class="pnl__num">-$2,400</td>
+                <td class="pnl__muted">Tolls, annual registration, misc</td>
+              </tr>
+              <tr class="pnl__total">
+                <td><strong>Net Monthly Cash Flow (Per SUV)</strong></td>
+                <td class="pnl__num" style="color:#ff69b4;"><strong>~$1,050</strong></td>
+                <td class="pnl__num" style="color:#ff69b4;"><strong>~$12,600</strong></td>
+                <td class="pnl__muted">Owner-operator model nets ~$4,800/mo driver + $350/mo company</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pnl__footnote animate-in">* Projections are estimates based on Austin market data and industry averages. Actual results will vary. This is not a guarantee of returns. Past performance of rideshare markets does not guarantee future results.</p>
+      </div>
+    </section>
+
+    <!-- Use of Funds -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="text-center">
+          <div class="section-label animate-in">Capital Allocation</div>
+          <h2 class="section-title animate-in animate-in-delay-1">Use of Funds</h2>
+          <p class="section-subtitle animate-in animate-in-delay-2" style="margin:0 auto var(--gap-xl);">How we'll deploy capital raised from investment partners.</p>
+        </div>
+        <div class="funds__grid animate-in animate-in-delay-2">
+          <div class="funds__item">
+            <span class="funds__pct">55%</span>
+            <h4>Vehicle Acquisition</h4>
+            <p>Purchase/lease of 6 identical luxury SUVs</p>
+          </div>
+          <div class="funds__item">
+            <span class="funds__pct">15%</span>
+            <h4>Branding & Equipment</h4>
+            <p>Custom pink bumper guards, interior accessories, phone mounts</p>
+          </div>
+          <div class="funds__item">
+            <span class="funds__pct">12%</span>
+            <h4>Insurance & Legal</h4>
+            <p>Commercial insurance policies, LLC formation, operating agreements</p>
+          </div>
+          <div class="funds__item">
+            <span class="funds__pct">10%</span>
+            <h4>Working Capital</h4>
+            <p>3-month operating reserve, fuel, maintenance, tolls</p>
+          </div>
+          <div class="funds__item">
+            <span class="funds__pct">5%</span>
+            <h4>Marketing & Launch</h4>
+            <p>Website, social media, event presence at SXSW/ACL</p>
+          </div>
+          <div class="funds__item">
+            <span class="funds__pct">3%</span>
+            <h4>Admin & Ops</h4>
+            <p>Software, accounting, phone, office supplies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-dark text-center">
+      <div class="container container-narrow">
+        <h2 class="section-title">Ready to Partner?</h2>
+        <p class="section-subtitle" style="margin:0 auto var(--gap-lg);">We're actively accepting expressions of interest for our initial closing. Contact us to schedule a call and receive our full investment memorandum.</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Contact Us Today</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .invest__actions { display: flex; gap: var(--gap-md); flex-wrap: wrap; }
+  .invest__gap-cards { display: flex; flex-direction: column; gap: var(--gap-md); }
+  .invest__gap-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); text-align: center; }
+  .invest__gap-num { display: block; font-size: 2rem; font-weight: 800; color: var(--color-primary); line-height: 1; margin-bottom: 0.25rem; }
+  .invest__gap-lbl { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .invest__models { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap-lg); margin-top: var(--gap-xl); }
+  .invest__model { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-xl); text-align: center; }
+  .invest__model-icon { font-size: 2rem; display: block; margin-bottom: var(--gap-md); }
+  .invest__model h3 { font-size: 1.1rem; margin-bottom: var(--gap-sm); }
+  .invest__model p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+  .pnl { overflow-x: auto; }
+  .pnl__table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .pnl__table th, .pnl__table td { padding: 0.6rem 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+  .pnl__table th { font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+  .pnl__num { text-align: right; white-space: nowrap; }
+  .pnl__muted { color: var(--text-muted); font-size: 0.8rem; }
+  .pnl__section-header td { font-weight: 700; color: var(--text-primary); border-top: 2px solid var(--border-color); padding-top: 1rem; }
+  .pnl__total td { border-top: 2px solid var(--color-primary); font-weight: 700; }
+  .pnl__total td:first-child { border-top: none; }
+  .pnl__footnote { margin-top: var(--gap-lg); font-size: 0.8rem; color: var(--text-muted); }
+  .funds__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-md); }
+  .funds__item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); }
+  .funds__pct { font-size: 2rem; font-weight: 800; color: var(--color-primary); display: block; line-height: 1; margin-bottom: 0.3rem; }
+  .funds__item h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+  .funds__item p { font-size: 0.85rem; color: var(--text-secondary); }
+  @media (max-width: 640px) {
+    .invest__models { grid-template-columns: 1fr; }
+    .funds__grid { grid-template-columns: 1fr; }
+    .invest__actions { flex-direction: column; }
+    .invest__actions .btn { width: 100%; justify-content: center; }
+  }
+</style>

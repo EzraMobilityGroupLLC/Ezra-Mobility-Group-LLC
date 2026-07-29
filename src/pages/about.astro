@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import siteData from "../config/siteData.json";
+const about = siteData.about;
+---
+
+<BaseLayout title="About Us" description={about.mission}>
+  <Header />
+  <main>
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="section-label animate-in">About Ezra Mobility Group LLC</div>
+        <h1 class="section-title animate-in animate-in-delay-1">Building Austin's Most Recognizable Luxury SUV Fleet</h1>
+        <p class="section-subtitle animate-in animate-in-delay-2">{about.story}</p>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container container-narrow">
+        <h2 class="section-title">Our Mission</h2>
+        <div class="accent-line"></div>
+        <p style="color:var(--text-secondary); line-height:1.8; font-size:1.05rem;">{about.mission}</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 class="section-title">Our Values</h2>
+        <div class="accent-line"></div>
+        <div class="values__grid">
+          {about.values.map((v, i) => (
+            <div class="value-card animate-in" style={`animation-delay: ${i * 0.1}s`}>
+              <h3>{v.title}</h3>
+              <p>{v.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark text-center">
+      <div class="container container-narrow">
+        <h2 class="section-title">Ready to Partner?</h2>
+        <p class="section-subtitle" style="margin:0 auto var(--gap-lg);">We're actively seeking investment partners, owner-operators, and fleet drivers for our Austin launch.</p>
+        <a href="/contact" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .values__grid { display: grid; gap: var(--gap-lg); }
+  .value-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); }
+  .value-card h3 { font-size: 1.1rem; margin-bottom: var(--gap-sm); }
+  .value-card p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
+</style>

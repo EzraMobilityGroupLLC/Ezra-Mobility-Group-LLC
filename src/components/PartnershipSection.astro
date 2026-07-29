@@ -1,0 +1,95 @@
+---
+const ways = [
+  {
+    title: "Passive Investor",
+    amount: "$5,000 – $50,000",
+    tag: "Equity / Revenue Share",
+    items: [
+      "Invest capital toward fleet acquisition & operations",
+      "Revenue share or equity stake based on contribution",
+      "Quarterly reporting on fleet performance & financials",
+      "First right of refusal on future fleet expansions",
+      "No operational involvement required"
+    ],
+    cta: "Become an Investor",
+    link: "/invest"
+  },
+  {
+    title: "Owner-Operator Partner",
+    amount: "You Supply the Vehicle",
+    tag: "Revenue Split Model",
+    items: [
+      "Provide a qualifying late-model luxury SUV (black-on-black)",
+      "We install pink bumper guard & manage Uber/Lyft setup",
+      "Fleet pricing & branding across all premium tiers",
+      "Revenue split: 80% driver / 20% company",
+      "Weekly payouts, full transparency dashboard"
+    ],
+    cta: "Bring Your Vehicle",
+    link: "/contact",
+    featured: true
+  },
+  {
+    title: "Driver (Company Vehicle)",
+    amount: "No Vehicle Needed",
+    tag: "Commission Split",
+    items: [
+      "Drive one of our fleet vehicles on your schedule",
+      "All maintenance, insurance & vehicle costs covered",
+      "Revenue split: 70% driver / 30% company",
+      "Weekly payouts via direct deposit",
+      "Mentorship & onboarding included"
+    ],
+    cta: "Apply to Drive",
+    link: "/contact"
+  }
+];
+---
+<section class="section" id="partner">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label animate-in">Flexible Structures</div>
+      <h2 class="section-title animate-in animate-in-delay-1">Three Ways to Partner</h2>
+      <p class="section-subtitle animate-in animate-in-delay-2" style="margin:0 auto var(--gap-xl);">Whether you want to invest capital, contribute a vehicle, or drive — we have a partnership model built for you.</p>
+    </div>
+    <div class="ways__grid">
+      {ways.map((w, i) => (
+        <div class={`ways__card animate-in animate-in-delay-${Math.min(i + 2, 4)} ${w.featured ? 'ways__card--featured' : ''}`}>
+          {w.featured && <span class="ways__recommended">Recommended</span>}
+          <div class="ways__header">
+            <h3 class="ways__title">{w.title}</h3>
+            <span class="ways__amount">{w.amount}</span>
+            <span class="ways__tag">{w.tag}</span>
+          </div>
+          <ul class="ways__list">
+            {w.items.map((item) => (
+              <li class="ways__item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff69b4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:3px;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={w.link} class={`btn ${w.featured ? 'btn-primary' : 'btn-secondary'}`} style="width:100%;justify-content:center;">{w.cta}</a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .ways__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap-lg); align-items: start; }
+  .ways__card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-xl); display: flex; flex-direction: column; gap: var(--gap-md); position: relative; transition: var(--transition); }
+  .ways__card:hover { border-color: var(--border-color-hover); transform: translateY(-2px); }
+  .ways__card--featured { border-color: rgba(255,105,180,0.3); background: linear-gradient(180deg, rgba(255,105,180,0.06) 0%, var(--bg-card) 100%); box-shadow: 0 8px 32px rgba(255,105,180,0.08); }
+  .ways__card--featured:hover { border-color: rgba(255,105,180,0.5); }
+  .ways__recommended { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--color-primary); color: #fff; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.3rem 1rem; border-radius: 100px; }
+  .ways__header { display: flex; flex-direction: column; gap: 0.3rem; }
+  .ways__title { font-size: 1.15rem; }
+  .ways__amount { font-size: 1.6rem; font-weight: 800; color: var(--color-primary); line-height: 1.2; }
+  .ways__tag { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .ways__list { display: flex; flex-direction: column; gap: var(--gap-sm); list-style: none; margin: 0; padding: 0; flex: 1; }
+  .ways__item { font-size: 0.88rem; color: var(--text-secondary); display: flex; gap: 0.5rem; line-height: 1.5; }
+  @media (max-width: 900px) {
+    .ways__grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  }
+</style>

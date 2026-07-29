@@ -1,0 +1,74 @@
+---
+import siteData from "../config/siteData.json";
+const { site, contact, footer } = siteData;
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">{site.shortName}</a>
+        <p class="footer__desc">{footer.description}</p>
+        <div class="footer__social">
+          {footer.socialLinks.map((link) => (
+            <a href={link.url} class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label={link.platform}>
+              {link.platform === "Instagram" && (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__list">
+          {siteData.navigation.map((item) => (
+            <li><a href={item.href} class="footer__link">{item.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__list">
+          <li><a href={`mailto:${contact.email}`} class="footer__link">{contact.email}</a></li>
+          <li><a href={`tel:${contact.phone}`} class="footer__link">{contact.phone}</a></li>
+          <li class="footer__text">{contact.location}</li>
+          <li class="footer__text">{contact.hours}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; {year} {site.name}. All rights reserved.</p>
+      <div class="footer__legal">
+        {footer.legalLinks.map((link) => (
+          <a href={link.href} class="footer__link">{link.label}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style is:global>
+  .footer { background: var(--bg-surface); border-top: 1px solid var(--border-color); padding: 5rem 0 2rem; }
+  .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1.25fr; gap: var(--gap-xl); margin-bottom: var(--gap-xl); }
+  .footer__logo { font-size: 1.3rem; font-weight: 700; color: var(--text-primary); text-decoration: none; }
+  .footer__desc { font-size: 0.9rem; color: var(--text-muted); margin-top: var(--gap-md); line-height: 1.6; }
+  .footer__social { display: flex; gap: var(--gap-md); margin-top: var(--gap-lg); }
+  .footer__social-link { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: var(--transition); }
+  .footer__social-link:hover { color: var(--color-primary); border-color: var(--color-primary); background: rgba(255,105,180,0.1); }
+  .footer__heading { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-primary); margin-bottom: var(--gap-lg); }
+  .footer__list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+  .footer__link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: var(--transition); }
+  .footer__link:hover { color: var(--color-primary); }
+  .footer__text { color: var(--text-muted); font-size: 0.9rem; }
+  .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--gap-lg); border-top: 1px solid var(--border-color); }
+  .footer__copyright { font-size: 0.85rem; color: var(--text-muted); }
+  .footer__legal { display: flex; gap: var(--gap-lg); }
+  @media (max-width: 768px) {
+    .footer__grid { grid-template-columns: 1fr 1fr; gap: var(--gap-lg); }
+    .footer__brand { grid-column: 1 / -1; }
+    .footer__bottom { flex-direction: column; gap: var(--gap-md); text-align: center; }
+  }
+  @media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+</style>

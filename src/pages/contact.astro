@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ContactForm from "../components/ContactForm.astro";
+import siteData from "../config/siteData.json";
+---
+
+<BaseLayout title="Contact — Partner With Us" description="Contact Ezra Mobility Group LLC about investment opportunities, owner-operator partnerships, or driving with our fleet.">
+  <Header />
+  <main>
+    <section class="section page-header">
+      <div class="container container-narrow text-center">
+        <div class="section-label">Get In Touch</div>
+        <h1 class="section-title">Let's Build This Fleet Together</h1>
+        <p class="section-subtitle" style="margin:0 auto;">Whether you want to invest, contribute a vehicle, drive, or supply vehicles — fill out the form and we'll schedule a call.</p>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container container-narrow">
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <h4>Email</h4>
+            <a href={`mailto:${siteData.contact.email}`}>{siteData.contact.email}</a>
+          </div>
+          <div class="contact__info-item">
+            <h4>Phone</h4>
+            <a href={`tel:${siteData.contact.phone}`}>{siteData.contact.phone}</a>
+          </div>
+          <div class="contact__info-item">
+            <h4>Location</h4>
+            <span>{siteData.contact.location}</span>
+          </div>
+        </div>
+        <ContactForm />
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .page-header { padding-bottom: 0; }
+  .contact__info { display: flex; justify-content: center; gap: var(--gap-xl); margin-bottom: var(--gap-xl); flex-wrap: wrap; border-bottom: 1px solid var(--border-color); padding-bottom: var(--gap-xl); }
+  .contact__info-item { text-align: center; }
+  .contact__info-item h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.3rem; }
+  .contact__info-item a { color: var(--color-primary); text-decoration: none; font-size: 0.95rem; }
+  .contact__info-item a:hover { text-decoration: underline; }
+  .contact__info-item span { font-size: 0.95rem; color: var(--text-secondary); }
+</style>

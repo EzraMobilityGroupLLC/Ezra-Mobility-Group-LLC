@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import HeroSection from "../components/HeroSection.astro";
+import StatsBar from "../components/StatsBar.astro";
+import OpportunitySection from "../components/OpportunitySection.astro";
+import PartnershipSection from "../components/PartnershipSection.astro";
+import WhyAustinSection from "../components/WhyAustinSection.astro";
+import siteData from "../config/siteData.json";
+---
+
+<BaseLayout>
+  <Header />
+  <main>
+    <HeroSection />
+    <StatsBar />
+    <OpportunitySection />
+    <PartnershipSection />
+    <WhyAustinSection />
+    <section class="section text-center">
+      <div class="container container-narrow">
+        <div class="section-label animate-in">Ready</div>
+        <h2 class="section-title animate-in animate-in-delay-1">Ready to Partner With Us?</h2>
+        <p class="section-subtitle animate-in animate-in-delay-2" style="margin:0 auto var(--gap-lg);">We're currently accepting investment commitments and owner-operator applications for our initial 6-SUV fleet. Let's build Austin's most recognizable premium rideshare brand — together.</p>
+        <a href="/contact" class="btn btn-primary btn-lg animate-in animate-in-delay-3">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  main { overflow: hidden; }
+</style>

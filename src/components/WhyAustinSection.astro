@@ -1,0 +1,89 @@
+---
+const reasons = [
+  {
+    number: "01",
+    title: "Austin is the Fastest-Growing Major Metro",
+    description: "Population grew 22% since 2020 (700+ new residents per week). More people = more rideshare trips, especially premium airport and event rides."
+  },
+  {
+    number: "02",
+    title: "Major Events Drive Surge Pricing Year-Round",
+    description: "SXSW, ACL Music Festival, F1 US Grand Prix (70% of attendees fly in), Texas Longhorns football, and countless conventions — all spikes that last days."
+  },
+  {
+    number: "03",
+    title: "More Passengers Than Available Black SUVs",
+    description: "At any given SXSW or F1 weekend, Uber Black and Lyft Black XL demand exceeds supply by 3-5x. Riders frequently wait 30+ minutes or get upgraded from standard tiers — a massive opportunity for operators."
+  },
+  {
+    number: "04",
+    title: "Airport Pickups Are Where Brand Recognition Wins",
+    description: "Passengers flying into AUS for business or events want premium. They remember — and re-book — the fleet with the pink bumper guards. First impression is everything."
+  },
+  {
+    number: "05",
+    title: "Premium Tier Payouts Are 2-3x Standard",
+    description: "Uber Black SUV rates in Austin average $2.50-$3.50/mile vs $0.60-$0.90/mile for UberX. A premium fleet earns significantly more per mile with fewer rides."
+  },
+  {
+    number: "06",
+    title: "Austin Is a Top 5 Destination for Relocation & Business",
+    description: "Tesla, Apple, Google, Samsung all have major Austin campuses. The corporate travel segment alone generates consistent weekday premium ride demand."
+  }
+];
+
+const stats = [
+  { value: "700+", label: "New residents per week" },
+  { value: "3-5x", label: "Black SUV demand vs supply during events" },
+  { value: "2.5-3.5x", label: "Uber Black SUV rate vs UberX" },
+  { value: "40%+", label: "Premium rideshare segment YoY growth" }
+];
+
+const statCols = Math.min(stats.length, 4);
+---
+<section class="section why-austin" id="why-austin">
+  <div class="container">
+    <div class="section-label animate-in">Market Intelligence</div>
+    <h2 class="section-title animate-in animate-in-delay-1">Why Austin?</h2>
+    <p class="section-subtitle animate-in animate-in-delay-2">
+      We're not just launching a fleet — we're launching in the single best market for premium rideshare in the United States right now.
+    </p>
+
+    <div class="why-austin__grid">
+      {reasons.map((r, i) => (
+        <div class="why-austin__card animate-in" style={`animation-delay: ${0.1 + i * 0.05}s`}>
+          <span class="why-austin__num">{r.number}</span>
+          <h3 class="why-austin__title">{r.title}</h3>
+          <p class="why-austin__desc">{r.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="why-austin__stats" style={`grid-template-columns: repeat(${statCols}, 1fr)`}>
+      {stats.map((s) => (
+        <div class="why-austin__stat">
+          <span class="why-austin__stat-val">{s.value}</span>
+          <span class="why-austin__stat-lbl">{s.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  .why-austin { background: var(--bg-surface); }
+  .why-austin__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-md); margin: var(--gap-xl) 0; }
+  .why-austin__card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); transition: var(--transition); }
+  .why-austin__card:hover { border-color: var(--border-color-hover); transform: translateY(-2px); }
+  .why-austin__num { font-size: 2rem; font-weight: 800; color: var(--color-primary); opacity: 0.3; line-height: 1; display: block; margin-bottom: var(--gap-sm); }
+  .why-austin__title { font-size: 1rem; margin-bottom: var(--gap-sm); }
+  .why-austin__desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+  .why-austin__stats { display: grid; gap: 1px; background: var(--border-color); border-radius: var(--radius-md); overflow: hidden; margin-top: var(--gap-xl); }
+  .why-austin__stat { background: var(--bg-card); padding: var(--gap-lg); text-align: center; }
+  .why-austin__stat-val { font-size: 2rem; font-weight: 800; color: var(--color-primary); display: block; }
+  .why-austin__stat-lbl { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  @media (max-width: 768px) {
+    .why-austin__grid { grid-template-columns: 1fr; }
+    .why-austin__stats { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+</style>

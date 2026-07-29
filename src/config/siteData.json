@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Ezra Mobility Group LLC",
+    "shortName": "Ezra Mobility Group LLC",
+    "tagline": "Invest in Austin's Premium Black SUV Fleet — Own a Piece of the Luxury Rideshare Market.",
+    "description": "Ezra Mobility Group is seeking investment partners and vehicle owner-operators to launch Austin's most distinctive luxury SUV fleet. We combine premium black-on-black vehicles with signature pink bumper guards for instant brand recognition in the Uber Black and Lyft Black XL market. Invest or partner — launch with us.",
+    "url": "https://www.ezramobilitygroup.com",
+    "language": "en",
+    "locale": "en_US"
+  },
+  "brand": {
+    "primaryColor": "#ff69b4",
+    "primaryHover": "#ff1493",
+    "accentColor": "#e8e8f0",
+    "darkBg": "#0a0a0f",
+    "surfaceBg": "#12121a",
+    "cardBg": "#1a1a26",
+    "textPrimary": "#ffffff",
+    "textSecondary": "#a0a0b0",
+    "borderColor": "rgba(255,255,255,0.06)",
+    "mascotDescription": "Custom animated digital avatar of Dylan featuring signature pink bangs and a stylized, memorable aesthetic.",
+    "signatureLook": "Custom gloss-pink heavy duty steel front bumper guards fitted on all fleet vehicles for instant road recognition."
+  },
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "Fleet", "href": "/fleet" },
+    { "label": "Invest", "href": "/invest" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "hero": {
+    "headline": "Own Austin's Most Recognizable Luxury SUV Fleet.",
+    "subheadline": "We're launching a premium black-on-black SUV fleet for Uber Black and Lyft Black XL — and we're looking for investment partners and vehicle owner-operators to make it happen. Signature pink bumper guards included."
+  },
+  "stats": [
+    { "value": "$80-120K", "label": "Projected Annual Rev Per SUV" },
+    { "value": "$2-3x", "label": "Uber Black vs Standard Fares" },
+    { "value": "Austin", "label": "Top 5 Rideshare Market" }
+  ],
+  "services": [
+    {
+      "id": "investment-opportunity",
+      "title": "Investment Opportunity: Austin Luxury SUV Fleet",
+      "shortTitle": "Fleet Investment",
+      "description": "We are building a fleet of 6 identical black-on-black luxury SUVs, each fitted with custom gloss-pink front bumper guards for instant brand recognition. Our target is the Uber Black, Uber Black SUV, and Lyft Black XL tiers — the highest per-mile payout categories in rideshare.",
+      "features": [
+        "Austin metro area — one of the fastest-growing rideshare markets in the US",
+        "Fully optimized for premium tiers: Uber Black, Uber Black SUV, Lyft Black XL",
+        "Signature pink bumper guard branding for instant road recognition at airport pickups",
+        "Projected $80K-120K annual revenue per vehicle after driver split",
+        "Flexible partnership structures: investor, owner-operator, or vehicle contribution"
+      ],
+      "icon": "star"
+    }
+  ],
+  "fleet": [
+    {
+      "category": "Premium Black SUVs — Target Vehicles",
+      "tag": "Uber Black | Uber Black SUV | Lyft Black XL",
+      "description": "We're targeting 6 identical late-model full-size luxury SUVs. Every unit deep black-on-black with captain seating and our custom gloss-pink front bumper guard.",
+      "vehicles": [
+        { "id": "suv-1", "name": "Luxury Black SUV - Unit 01", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
+        { "id": "suv-2", "name": "Luxury Black SUV - Unit 02", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
+        { "id": "suv-3", "name": "Luxury Black SUV - Unit 03", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
+        { "id": "suv-4", "name": "Luxury Black SUV - Unit 04", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
+        { "id": "suv-5", "name": "Luxury Black SUV - Unit 05", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
+        { "id": "suv-6", "name": "Luxury Black SUV - Unit 06", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Austin Rideshare Analyst",
+      "role": "Transportation Market Research",
+      "text": "Austin's premium rideshare segment has grown 40% year-over-year. The market consistently lacks enough Black-tier vehicles to meet demand — especially during events like SXSW, ACL, and F1. A well-branded luxury SUV fleet with instant visual recognition is exactly what this market needs.",
+      "rating": 5
+    }
+  ],
+  "about": {
+    "mission": "To build Austin's most recognizable luxury SUV fleet, deploy it in the highest-earning rideshare tiers, and create a scalable model for premium fleet ownership that benefits investors, drivers, and the community.",
+    "story": "Ezra Mobility Group LLC was founded in Austin, Texas — one of the fastest-growing cities in the US and a top-tier rideshare market. We saw a gap: there aren't enough premium Black-tier SUVs to meet demand, especially during major events. Our solution: a fleet of identical black-on-black luxury SUVs with custom gloss-pink bumper guards that make every pickup instantly recognizable. We're in our launch phase and actively seeking investment partners and vehicle owner-operators to bring this vision to the road.",
+    "values": [
+      { "title": "Market Fit First", "description": "Austin's premium rideshare demand far exceeds supply. Our fleet targets the highest-revenue tiers with zero competition on branding." },
+      { "title": "Unmistakable Identity", "description": "Our signature pink bumper guards make every vehicle instantly recognizable — turning every ride into a mobile billboard." },
+      { "title": "Scalable Partnership Model", "description": "We structure investments and partnerships so everyone wins: investors, owner-operators, and drivers. No one carries the full burden alone." }
+    ]
+  },
+  "contact": {
+    "email": "info@ezramobilitygroup.com",
+    "phone": "(512) 348-8425",
+    "location": "Austin, Texas Metro Area",
+    "address": "Austin, TX 78701",
+    "hours": "Mon–Sat: 6 AM – 10 PM | Sun: By Appointment"
+  },
+  "footer": {
+    "description": "Austin's next premium luxury SUV fleet investment opportunity. Partner with us to build the city's most recognizable rideshare brand.",
+    "socialLinks": [
+      { "platform": "Instagram", "url": "https://www.instagram.com/ezramobilitygroup", "icon": "instagram" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" }
+    ]
+  }
+}

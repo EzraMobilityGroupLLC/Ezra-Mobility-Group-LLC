@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Thank You" description="Thanks for reaching out to Ezra Mobility Group. We'll be in touch within 24 hours.">
+  <Header />
+  <main class="thanks-page">
+    <section class="section text-center">
+      <div class="container container-narrow">
+        <div class="thanks-icon">🎉</div>
+        <h1 class="section-title">Thank You!</h1>
+        <p class="section-subtitle" style="margin: 0 auto var(--gap-xl);">Your partnership inquiry has been received. We'll review your submission and reach out within 24 hours to discuss next steps.</p>
+        <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .thanks-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .thanks-icon { font-size: 4rem; margin-bottom: var(--gap-lg); }
+</style>

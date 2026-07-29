@@ -1,0 +1,22 @@
+{
+  "name": "ezramobilitygroup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "astro build && wrangler pages deploy dist --project-name ezramobilitygroup"
+  },
+  "dependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.62.3",
+    "astro": "^5.2.0",
+    "resend": "^6.16.0"
+  },
+  "devDependencies": {
+    "@astrojs/cloudflare": "^12.0.0",
+    "@astrojs/sitemap": "^3.2.0",
+    "wrangler": "^4.105.0"
+  }
+}
