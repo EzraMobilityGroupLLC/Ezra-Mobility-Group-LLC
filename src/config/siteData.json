@@ -42,7 +42,7 @@
       "id": "investment-opportunity",
       "title": "Investment Opportunity: Austin Luxury SUV Fleet",
       "shortTitle": "Fleet Investment",
-      "description": "We are building a fleet of 6 identical black-on-black luxury SUVs, each fitted with custom gloss-pink front bumper guards for instant brand recognition. Our target is the Uber Black, Uber Black SUV, and Lyft Black XL tiers — the highest per-mile payout categories in rideshare.",
+      "description": "We are building a fleet of 7 distinct black-on-black luxury SUVs, each fitted with custom gloss-pink front bumper guards for instant brand recognition. Our target is the Uber Black, Uber Black SUV, and Lyft Black XL tiers — the highest per-mile payout categories in rideshare.",
       "features": [
         "Austin metro area — one of the fastest-growing rideshare markets in the US",
         "Fully optimized for premium tiers: Uber Black, Uber Black SUV, Lyft Black XL",
@@ -57,14 +57,15 @@
     {
       "category": "Premium Black SUVs — Target Vehicles",
       "tag": "Uber Black | Uber Black SUV | Lyft Black XL",
-      "description": "We're targeting 6 identical late-model full-size luxury SUVs. Every unit deep black-on-black with captain seating and our custom gloss-pink front bumper guard.",
+      "description": "We're targeting 7 distinct late-model luxury SUVs encompassing both premium ICE and electric platforms. Every unit deep black-on-black with captain seating and our custom gloss-pink front bumper guard.",
       "vehicles": [
-        { "id": "suv-1", "name": "Luxury Black SUV - Unit 01", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
-        { "id": "suv-2", "name": "Luxury Black SUV - Unit 02", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
-        { "id": "suv-3", "name": "Luxury Black SUV - Unit 03", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
-        { "id": "suv-4", "name": "Luxury Black SUV - Unit 04", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
-        { "id": "suv-5", "name": "Luxury Black SUV - Unit 05", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] },
-        { "id": "suv-6", "name": "Luxury Black SUV - Unit 06", "image": "", "features": ["Black-on-Black exterior & leather", "Custom gloss-pink front bumper guard", "Captain chairs (7-passenger)", "Eligible: Uber Black, Black SUV, Lyft Black XL"] }
+        { "id": "suv-1", "name": "2027 Chevrolet Tahoe High Country", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-2", "name": "2027 Chevrolet Suburban High Country", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-3", "name": "2026 Lincoln Navigator Reserve L", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-4", "name": "2027 Ford Expedition Max Platinum", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-5", "name": "2026 Cadillac Escalade IQ", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-6", "name": "2026 Rivian R1S Dual-Motor Max", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] },
+        { "id": "suv-7", "name": "2026 Kia EV9 GT-Line", "image": "", "features": ["Commercial insurance (comprehensive + high liability)", "Austin TNC livery permits filed and current", "Uber Black / Uber Black SUV / Lyft Black eligible", "Signature hot-pink heavy duty steel bumper guard"] }
       ]
     }
   ],
