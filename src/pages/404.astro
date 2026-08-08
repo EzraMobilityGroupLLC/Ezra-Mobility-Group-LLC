@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Page Not Found" description="The page you're looking for doesn't exist. Return to Ezra Mobility Group's homepage." index={false}>
+  <Header />
+  <main class="error-page">
+    <section class="section text-center">
+      <div class="container container-narrow">
+        <div class="error-code">404</div>
+        <h1 class="section-title">Page Not Found</h1>
+        <p class="section-subtitle" style="margin: 0 auto var(--gap-xl);">The page you're looking for doesn't exist or may have moved. Let's get you back on the road.</p>
+        <div class="error-actions">
+          <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+          <a href="/contact" class="btn btn-secondary btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .error-page { min-height: calc(100vh - 140px); display: flex; align-items: center; justify-content: center; }
+  .error-code { font-size: 6rem; font-weight: 800; line-height: 1; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--gap-md); }
+  .error-actions { display: flex; gap: var(--gap-md); justify-content: center; flex-wrap: wrap; }
+</style>

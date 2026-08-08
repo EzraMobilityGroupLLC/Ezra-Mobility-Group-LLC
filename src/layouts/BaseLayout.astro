@@ -6,14 +6,43 @@ export interface Props {
   title?: string;
   description?: string;
   canonical?: string;
+  index?: boolean;
 }
 
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, index = true } = Astro.props;
 const pageTitle = title
   ? `${title} | ${siteData.site.name}`
-  : `${siteData.site.shortName} — ${siteData.site.tagline}`;
+  : `${siteData.site.shortName} — Austin's Luxury SUV Fleet`;
 const pageDesc = description || siteData.site.description;
 const pageCanonical = canonical || siteData.site.url;
+const robotsContent = index ? "index, follow" : "noindex, nofollow";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: siteData.site.name,
+  description: siteData.site.description,
+  url: siteData.site.url,
+  image: `${siteData.site.url}/images/og-image.jpg`,
+  telephone: siteData.contact.phone,
+  email: siteData.contact.email,
+  priceRange: "$$$",
+  areaServed: "Austin, TX",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Austin",
+    addressRegion: "TX",
+    postalCode: "78701",
+    addressCountry: "US"
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "06:00",
+    closes: "22:00"
+  },
+  sameAs: ["https://www.instagram.com/ezramobilitygroup"]
+};
 ---
 
 <!doctype html>
@@ -22,6 +51,7 @@ const pageCanonical = canonical || siteData.site.url;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={pageDesc} />
+    <meta name="robots" content={robotsContent} />
     <meta name="theme-color" content={siteData.brand.darkBg} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
@@ -33,7 +63,11 @@ const pageCanonical = canonical || siteData.site.url;
     <meta name="twitter:description" content={pageDesc} />
     <link rel="canonical" href={pageCanonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" />
     <title>{pageTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
     <slot />
