@@ -14,6 +14,7 @@
     "resend": "^6.16.0"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.2.0"
+    "@astrojs/sitemap": "^3.2.0",
+    "wrangler": "^4.120.0"
   }
 }
