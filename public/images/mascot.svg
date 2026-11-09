@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
+  <!-- Body - slim build -->
+  <ellipse cx="100" cy="185" rx="32" ry="45" fill="#f0e6d3" stroke="#d4c4a8" stroke-width="1"/>
+  <!-- White polo / shirt -->
+  <path d="M68 160 Q68 140 100 135 Q132 140 132 160 L132 190 Q100 195 68 190 Z" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <!-- Collar -->
+  <path d="M90 140 L100 150 L110 140" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <!-- EMG small logo on shirt -->
+  <rect x="92" y="160" width="16" height="8" rx="2" fill="#e6007e"/>
+  <text x="100" y="166" text-anchor="middle" font-size="5" font-weight="bold" fill="white" font-family="Arial">EMG</text>
+  <!-- Head -->
+  <ellipse cx="100" cy="90" rx="32" ry="36" fill="#f0e6d3" stroke="#d4c4a8" stroke-width="1"/>
+  <!-- Blonde hair -->
+  <path d="M68 85 Q65 45 80 38 Q90 33 100 32 Q110 33 120 38 Q135 45 132 85" fill="#f0d060" stroke="#d4a820" stroke-width="1"/>
+  <!-- Hair strands -->
+  <path d="M72 75 Q70 50 82 42" stroke="#e0b830" stroke-width="1.5" fill="none"/>
+  <path d="M128 75 Q130 50 118 42" stroke="#e0b830" stroke-width="1.5" fill="none"/>
+  <path d="M90 35 Q88 55 78 65" stroke="#e0b830" stroke-width="1" fill="none"/>
+  <path d="M110 35 Q112 55 122 65" stroke="#e0b830" stroke-width="1" fill="none"/>
+  <!-- Hair top volume -->
+  <path d="M80 40 Q90 30 100 28 Q110 30 120 40" fill="#f0d060" stroke="#d4a820" stroke-width="1"/>
+  <!-- Blue eyes -->
+  <ellipse cx="86" cy="88" rx="6" ry="5" fill="white"/>
+  <ellipse cx="114" cy="88" rx="6" ry="5" fill="white"/>
+  <circle cx="87" cy="88" r="3.5" fill="#4a90d9"/>
+  <circle cx="115" cy="88" r="3.5" fill="#4a90d9"/>
+  <circle cx="88" cy="87" r="1.2" fill="#1a1a1a"/>
+  <circle cx="116" cy="87" r="1.2" fill="#1a1a1a"/>
+  <!-- Eyebrows - light blonde -->
+  <path d="M79 81 Q86 78 93 81" stroke="#d4a820" stroke-width="1.5" fill="none"/>
+  <path d="M107 81 Q114 78 121 81" stroke="#d4a820" stroke-width="1.5" fill="none"/>
+  <!-- Smile -->
+  <path d="M88 100 Q100 110 112 100" stroke="#d4a820" stroke-width="1.5" fill="none" class="mascot-mouth"/>
+  <!-- Blush -->
+  <ellipse cx="78" cy="96" rx="5" ry="3" fill="#ffb3b3" opacity="0.4"/>
+  <ellipse cx="122" cy="96" rx="5" ry="3" fill="#ffb3b3" opacity="0.4"/>
+  <!-- Left arm -->
+  <path d="M68 160 Q50 155 45 145" stroke="#f0e6d3" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <circle cx="45" cy="143" r="5" fill="#f0e6d3"/>
+  <!-- Right arm (waving) -->
+  <path d="M132 160 Q155 145 160 120" stroke="#f0e6d3" stroke-width="10" stroke-linecap="round" fill="none" class="mascot-arm-right"/>
+  <circle cx="161" cy="118" r="5" fill="#f0e6d3"/>
+  <!-- Legs - jeans -->
+  <rect x="82" y="222" width="14" height="20" rx="3" fill="#4a5a7a"/>
+  <rect x="104" y="222" width="14" height="20" rx="3" fill="#4a5a7a"/>
+  <!-- Shoes - white -->
+  <rect x="80" y="238" width="18" height="8" rx="3" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="102" y="238" width="18" height="8" rx="3" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <!-- Pink bumper guard wristband -->
+  <rect x="68" y="157" width="10" height="6" rx="2" fill="#e6007e" opacity="0.6"/>
+</svg>

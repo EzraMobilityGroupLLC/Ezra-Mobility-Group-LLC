@@ -31,7 +31,7 @@ const fleetData = siteData.fleet[0];
               <ul class="fleet__card-features">
                 {v.features.map((f) => (
                   <li class="fleet__card-feature">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ff69b4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                     {f}
                   </li>
                 ))}
@@ -54,7 +54,7 @@ const fleetData = siteData.fleet[0];
 
 <style is:global>
   .fleet__header { margin-bottom: var(--gap-xl); }
-  .fleet__tag { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--color-primary); background: rgba(255,105,180,0.08); border: 1px solid rgba(255,105,180,0.2); padding: 0.4rem 1rem; border-radius: 100px; }
+  .fleet__tag { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--color-primary); background: rgba(37, 99, 235,0.08); border: 1px solid rgba(37, 99, 235,0.2); padding: 0.4rem 1rem; border-radius: 100px; }
   .fleet__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap-md); }
   .fleet__card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); transition: var(--transition); }
   .fleet__card:hover { border-color: var(--border-color-hover); transform: translateY(-2px); }

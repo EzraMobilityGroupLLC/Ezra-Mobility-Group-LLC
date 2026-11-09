@@ -10,8 +10,8 @@
   },
 
   "brand": {
-    "primaryColor": "#ff69b4",
-    "primaryHover": "#ff1493",
+    "primaryColor": "#2563eb",
+    "primaryHover": "#1d4ed8",
     "accentColor": "#e8e8f0",
     "darkBg": "#0a0a0f",
     "surfaceBg": "#12121a",
