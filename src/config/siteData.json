@@ -3,7 +3,7 @@
     "name": "Ezra Mobility Group LLC",
     "shortName": "Ezra Mobility Group LLC",
     "tagline": "Invest in Austin's Premium Black SUV Fleet — Own a Piece of the Luxury Rideshare Market.",
-    "description": "Ezra Mobility Group is seeking investment partners and vehicle owner-operators to launch Austin's premium luxury SUV fleet. We combine premium black-on-black vehicles for the Uber Premier and Lyft Black XL market. Invest or partner — launch with us.",
+    "description": "Ezra Mobility Group is seeking investment partners and vehicle owner-operators to launch Austin's premium luxury vehicle fleet. We combine premium black-on-black vehicles for the Uber Premier and Lyft Black XL market. Invest or partner — launch with us.",
     "url": "https://www.ezramobilitygroup.com",
     "language": "en",
     "locale": "en_US"
@@ -47,7 +47,7 @@
       "id": "investment-opportunity",
       "title": "Investment Opportunity: Austin Luxury SUV Fleet",
       "shortTitle": "Fleet Investment",
-      "description": "We are seeking capital to build a target fleet of premium black-on-black luxury SUVs across multiple rideshare tiers. Our premium tier targets Uber Premier, Uber Premier SUV, and Lyft Black XL. We're also adding budget-friendly black luxury cars for the Comfort tier to broaden our market impact.",
+      "description": "We are seeking capital to build a target fleet of premium black-on-black luxury vehicles across multiple rideshare tiers. Our premium tier targets Uber Premier, Uber Premier SUV, and Lyft Black XL. We're also adding budget-friendly black luxury cars for the Comfort tier to broaden our market impact.",
       "features": [
         "Austin metro area — one of the fastest-growing rideshare markets in the US",
         "Premium tier: Uber Premier, Uber Premier SUV, Lyft Black XL",
@@ -63,15 +63,13 @@
     {
       "category": "Premium Black SUVs — Target Vehicles",
       "tag": "Uber Premier | Uber Premier SUV | Lyft Black XL",
-      "description": "We're targeting 7 distinct late-model luxury SUVs encompassing both premium ICE and electric platforms. Every unit deep black-on-black with captain seating. These vehicles are planned acquisitions pending investment capital.",
+      "description": "Our primary target SUVs are the Lincoln Navigator and Chevrolet Suburban. We're also open to non-SUV luxury cars such as the BMW 7 Series and Mercedes-Benz S-Class, with active research into fully electric options like the Kia EV9. Every unit deep black-on-black with captain seating. These vehicles are planned acquisitions pending investment capital.",
       "vehicles": [
-        { "id": "suv-1", "name": "2027 Chevrolet Tahoe High Country", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-2", "name": "2027 Chevrolet Suburban High Country", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-3", "name": "2026 Lincoln Navigator Reserve L", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-4", "name": "2027 Ford Expedition Max Platinum", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-5", "name": "2026 Cadillac Escalade IQ", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-6", "name": "2026 Rivian R1S Dual-Motor Max", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
-        { "id": "suv-7", "name": "2026 Kia EV9 GT-Line", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] }
+        { "id": "suv-1", "name": "Lincoln Navigator", "image": "", "features": ["Primary fleet SUV", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
+        { "id": "suv-2", "name": "Chevrolet Suburban", "image": "", "features": ["Primary fleet SUV", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
+        { "id": "suv-3", "name": "BMW 7 Series", "image": "", "features": ["Open to non-SUV luxury cars", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Lyft Black eligible", "Black-on-black luxury finish"] },
+        { "id": "suv-4", "name": "Mercedes-Benz S-Class", "image": "", "features": ["Open to non-SUV luxury cars", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Lyft Black eligible", "Black-on-black luxury finish"] },
+        { "id": "suv-5", "name": "Kia EV9", "image": "", "features": ["Active research into fully electric options", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Lyft Black eligible", "Black-on-black luxury finish"] }
       ]
     },
     {
@@ -79,9 +77,9 @@
       "tag": "Uber Comfort | UberX | Lyft Standard",
       "description": "Budget-friendly black luxury cars for the Comfort and standard rideshare tiers. A lower-cost entry point for new drivers and price-conscious riders, expanding our fleet's market reach.",
       "vehicles": [
-        { "id": "car-1", "name": "2025 Toyota Camry XSE", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
-        { "id": "car-2", "name": "2025 Honda Accord Touring", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
-        { "id": "car-3", "name": "2025 Lexus ES 350", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] }
+        { "id": "car-1", "name": "Toyota Camry XSE", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
+        { "id": "car-2", "name": "Honda Accord Touring", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
+        { "id": "car-3", "name": "Lexus ES 350", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] }
       ]
     }
   ],
