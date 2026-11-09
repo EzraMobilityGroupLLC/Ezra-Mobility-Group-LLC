@@ -96,6 +96,12 @@
   ],
 
   "about": {
+    "veteranOwned": true,
+    "founder": {
+      "name": "Dylan Disney",
+      "title": "Founder & Managing Member",
+      "bio": "Dylan Disney is the Founder and Managing Member of Ezra Mobility Group LLC. A proud U.S. Navy Veteran, Dylan served as a Personnel Specialist aboard the USS Gunston Hall and USS Pearl Harbor, where he developed a strong foundation in administrative excellence, discipline, and operational leadership. Bringing over a decade of direct experience in the rideshare and transportation industry, he possesses an intricate understanding of driver logistics, client expectations, and market dynamics. Currently advancing his expertise through a Business Administration degree at Austin Community College, Dylan is dedicated to leveraging his extensive background to elevate the standard of professional mobility and fleet management in the Austin, Texas market."
+    },
     "mission": "To build Austin's premium luxury vehicle fleet, deploy it across the highest-earning rideshare tiers, and create a scalable model for premium fleet ownership that benefits investors, drivers, and the community.",
     "story": "Ezra Mobility Group LLC was founded in Austin, Texas — one of the fastest-growing cities in the US and a top-tier rideshare market. We saw a gap: there aren't enough premium-tier vehicles to meet demand, especially during major events. Our solution: a planned fleet of black-on-black luxury vehicles spanning premium and Comfort tiers. We're in our launch phase and actively seeking investment partners and vehicle owner-operators to bring this vision to the road.",
     "values": [

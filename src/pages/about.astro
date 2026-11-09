@@ -12,12 +12,16 @@ const about = siteData.about;
     <section class="section">
       <div class="container container-narrow">
         <div class="section-label animate-in">About Ezra Mobility Group LLC</div>
-        <h1 class="section-title animate-in animate-in-delay-1">Building Austin's Most Recognizable Luxury SUV Fleet</h1>
+        <h1 class="section-title animate-in animate-in-delay-1">Building Austin's Premium Luxury Vehicle Fleet</h1>
         <p class="section-subtitle animate-in animate-in-delay-2">{about.story}</p>
       </div>
     </section>
     <section class="section section-dark">
       <div class="container container-narrow">
+        <div class="veteran-badge animate-in">
+          <span class="veteran-badge__icon">🇺🇸</span>
+          <span class="veteran-badge__text">100% Veteran-Owned Business</span>
+        </div>
         <h2 class="section-title">Our Mission</h2>
         <div class="accent-line"></div>
         <p style="color:var(--text-secondary); line-height:1.8; font-size:1.05rem;">{about.mission}</p>
@@ -37,6 +41,17 @@ const about = siteData.about;
         </div>
       </div>
     </section>
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 class="section-title">About the Founder</h2>
+        <div class="accent-line"></div>
+        <div class="founder-card animate-in">
+          <h3 class="founder-card__name">{about.founder.name}</h3>
+          <p class="founder-card__title">{about.founder.title}</p>
+          <p class="founder-card__bio">{about.founder.bio}</p>
+        </div>
+      </div>
+    </section>
     <section class="section section-dark text-center">
       <div class="container container-narrow">
         <h2 class="section-title">Ready to Partner?</h2>
@@ -53,4 +68,11 @@ const about = siteData.about;
   .value-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-lg); }
   .value-card h3 { font-size: 1.1rem; margin-bottom: var(--gap-sm); }
   .value-card p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
+  .veteran-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,105,180,0.08); border: 1px solid rgba(255,105,180,0.2); padding: 0.5rem 1rem; border-radius: var(--radius-sm); margin-bottom: var(--gap-lg); }
+  .veteran-badge__icon { font-size: 1.2rem; }
+  .veteran-badge__text { font-size: 0.9rem; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em; }
+  .founder-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--gap-xl); }
+  .founder-card__name { font-size: 1.3rem; margin-bottom: 0.25rem; }
+  .founder-card__title { font-size: 0.9rem; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--gap-md); }
+  .founder-card__bio { font-size: 1rem; color: var(--text-secondary); line-height: 1.8; }
 </style>
