@@ -3,7 +3,7 @@
     "name": "Ezra Mobility Group LLC",
     "shortName": "Ezra Mobility Group LLC",
     "tagline": "Invest in Austin's Premium Black SUV Fleet — Own a Piece of the Luxury Rideshare Market.",
-    "description": "Ezra Mobility Group is seeking investment partners and vehicle owner-operators to launch Austin's most distinctive luxury SUV fleet. We combine premium black-on-black vehicles for instant brand recognition in the Uber Premier and Lyft Black XL market. Invest or partner — launch with us.",
+    "description": "Ezra Mobility Group is seeking investment partners and vehicle owner-operators to launch Austin's premium luxury SUV fleet. We combine premium black-on-black vehicles for the Uber Premier and Lyft Black XL market. Invest or partner — launch with us.",
     "url": "https://www.ezramobilitygroup.com",
     "language": "en",
     "locale": "en_US"
@@ -32,7 +32,7 @@
   ],
 
   "hero": {
-    "headline": "Own Austin's Most Recognizable Luxury SUV Fleet.",
+    "headline": "Own Austin's Premium Luxury SUV Fleet.",
     "subheadline": "We're launching a premium black-on-black SUV fleet for Uber Premier and Lyft Black XL — and we're looking for investment partners and vehicle owner-operators to make it happen."
   },
 
@@ -47,11 +47,12 @@
       "id": "investment-opportunity",
       "title": "Investment Opportunity: Austin Luxury SUV Fleet",
       "shortTitle": "Fleet Investment",
-      "description": "We are seeking capital to build a target fleet of 7 distinct black-on-black luxury SUVs for instant brand recognition. Our target is the Uber Premier, Uber Premier SUV, and Lyft Black XL tiers — the highest per-mile payout categories in rideshare.",
+      "description": "We are seeking capital to build a target fleet of premium black-on-black luxury SUVs across multiple rideshare tiers. Our premium tier targets Uber Premier, Uber Premier SUV, and Lyft Black XL. We're also adding budget-friendly black luxury cars for the Comfort tier to broaden our market impact.",
       "features": [
         "Austin metro area — one of the fastest-growing rideshare markets in the US",
-        "Fully optimized for premium tiers: Uber Premier, Uber Premier SUV, Lyft Black XL",
-        "Projected $80K-120K annual revenue per vehicle after driver split",
+        "Premium tier: Uber Premier, Uber Premier SUV, Lyft Black XL",
+        "Budget tier: Uber Comfort, UberX, Lyft Standard",
+        "Projected $80K-120K annual revenue per premium SUV after driver split",
         "Flexible partnership structures: investor, owner-operator, or vehicle contribution"
       ],
       "icon": "star"
@@ -72,6 +73,16 @@
         { "id": "suv-6", "name": "2026 Rivian R1S Dual-Motor Max", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] },
         { "id": "suv-7", "name": "2026 Kia EV9 GT-Line", "image": "", "features": ["Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Premier / Uber Premier SUV / Lyft Black eligible", "Black-on-black luxury finish"] }
       ]
+    },
+    {
+      "category": "Comfort-Tier Black Luxury Cars — Budget-Friendly Options",
+      "tag": "Uber Comfort | UberX | Lyft Standard",
+      "description": "Budget-friendly black luxury cars for the Comfort and standard rideshare tiers. A lower-cost entry point for new drivers and price-conscious riders, expanding our fleet's market reach.",
+      "vehicles": [
+        { "id": "car-1", "name": "2025 Toyota Camry XSE", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
+        { "id": "car-2", "name": "2025 Honda Accord Touring", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] },
+        { "id": "car-3", "name": "2025 Lexus ES 350", "image": "", "features": ["Fuel-efficient and low operating cost", "Will carry commercial insurance (comprehensive + high liability)", "Austin TNC livery permits to be filed", "Uber Comfort / UberX / Lyft Standard eligible", "Black-on-black finish"] }
+      ]
     }
   ],
 
@@ -79,17 +90,17 @@
     {
       "name": "Austin Rideshare Analyst",
       "role": "Transportation Market Research",
-      "text": "Austin's premium rideshare segment has grown 40% year-over-year. The market consistently lacks enough premium-tier vehicles to meet demand — especially during events like SXSW, ACL, and F1. A well-branded luxury SUV fleet with instant visual recognition is exactly what this market needs.",
+      "text": "Austin's premium rideshare segment has grown 40% year-over-year. The market consistently lacks enough premium-tier vehicles to meet demand — especially during events like SXSW, ACL, and F1. A well-branded luxury vehicle fleet is exactly what this market needs.",
       "rating": 5
     }
   ],
 
   "about": {
-    "mission": "To build Austin's most recognizable luxury SUV fleet, deploy it in the highest-earning rideshare tiers, and create a scalable model for premium fleet ownership that benefits investors, drivers, and the community.",
-    "story": "Ezra Mobility Group LLC was founded in Austin, Texas — one of the fastest-growing cities in the US and a top-tier rideshare market. We saw a gap: there aren't enough premium-tier SUVs to meet demand, especially during major events. Our solution: a planned fleet of black-on-black luxury SUVs that make every pickup instantly recognizable. We're in our launch phase and actively seeking investment partners and vehicle owner-operators to bring this vision to the road.",
+    "mission": "To build Austin's premium luxury vehicle fleet, deploy it across the highest-earning rideshare tiers, and create a scalable model for premium fleet ownership that benefits investors, drivers, and the community.",
+    "story": "Ezra Mobility Group LLC was founded in Austin, Texas — one of the fastest-growing cities in the US and a top-tier rideshare market. We saw a gap: there aren't enough premium-tier vehicles to meet demand, especially during major events. Our solution: a planned fleet of black-on-black luxury vehicles spanning premium and Comfort tiers. We're in our launch phase and actively seeking investment partners and vehicle owner-operators to bring this vision to the road.",
     "values": [
-      { "title": "Market Fit First", "description": "Austin's premium rideshare demand far exceeds supply. Our fleet targets the highest-revenue tiers." },
-      { "title": "Unmistakable Identity", "description": "Our fleet will be instantly recognizable — turning every ride into a mobile billboard." },
+      { "title": "Market Fit First", "description": "Austin's premium rideshare demand far exceeds supply. Our fleet targets the highest-revenue tiers, plus budget-friendly Comfort options." },
+      { "title": "Premium Quality", "description": "Every vehicle in our fleet is held to a premium black-on-black standard — from luxury SUVs to Comfort-tier sedans." },
       { "title": "Scalable Partnership Model", "description": "We structure investments and partnerships so everyone wins: investors, owner-operators, and drivers. No one carries the full burden alone." }
     ]
   },
@@ -103,7 +114,7 @@
   },
 
   "footer": {
-    "description": "Austin's next premium luxury SUV fleet investment opportunity. Partner with us to build the city's most recognizable rideshare brand.",
+    "description": "Austin's next premium luxury vehicle fleet investment opportunity. Partner with us to build the city's most recognizable rideshare brand.",
     "socialLinks": [
       { "platform": "Instagram", "url": "https://www.instagram.com/ezramobilitygroup", "icon": "instagram" }
     ],
